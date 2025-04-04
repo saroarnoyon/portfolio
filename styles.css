@@ -15,6 +15,11 @@ body {
     background: #ecf0f3;
 }
 
+.bg-purple {
+    background-color: #6f42c1 !important;
+    color: #fff;
+}
+
 .icons a {
     background: #ecf0f3;
     position: relative;

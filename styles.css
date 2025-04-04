@@ -15,11 +15,6 @@ body {
     background: #ecf0f3;
 }
 
-.bg-purple {
-    background-color: #6f42c1 !important;
-    color: #fff;
-}
-
 .icons a {
     background: #ecf0f3;
     position: relative;
@@ -79,4 +74,28 @@ body {
 
 .icons a.yt i {
     color: #ff0000;
+}
+
+/* Label Styles */
+.label {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    margin-right: 6px;
+}
+
+.label.current {
+    background-color: #dc3545; /* red */
+}
+
+.label.former {
+    background-color: #007bff; /* blue */
+}
+
+.label.hsc {
+    background-color: #ffc107; /* yellow */
+    color: #000; /* better contrast on yellow */
 }

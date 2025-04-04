@@ -78,24 +78,28 @@ body {
 
 /* Label Styles */
 .label {
-    display: inline-block;
-    padding: 2px 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 25px;
     border-radius: 5px;
     font-size: 12px;
     font-weight: 600;
     color: white;
     margin-right: 6px;
+    text-align: center;
 }
 
 .label.current {
-    background-color: #dc3545; /* red */
+    background-color: #dc3545; /* Red */
 }
 
 .label.former {
-    background-color: #007bff; /* blue */
+    background-color: #007bff; /* Blue */
 }
 
 .label.hsc {
-    background-color: #ffc107; /* yellow */
-    color: #000; /* better contrast on yellow */
+    background-color: #6f42c1; /* Purple */
+    color: #fff; /* White text for contrast */
 }

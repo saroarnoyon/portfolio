@@ -13,6 +13,7 @@ body {
   height: 100%;
   place-items: center;
   background: #ecf0f3;
+  transition: background 0.3s, color 0.3s;
 }
 
 .icons a {
@@ -26,7 +27,7 @@ body {
   border-radius: 50%;
   transition: all 0.3s;
   box-shadow: -3px -3px 7px #ffffff,
-    3px 3px 5px #ceced1;
+              3px 3px 5px #ceced1;
 }
 
 .icons a:hover:before {
@@ -39,7 +40,7 @@ body {
   border-radius: 50%;
   background: #ecf0f3;
   box-shadow: inset -3px -3px 7px #ffffff,
-    inset 3px 3px 5px #ceced1;
+              inset 3px 3px 5px #ceced1;
 }
 
 .icons a i {
@@ -76,26 +77,47 @@ body {
   color: #ff0000;
 }
 
-/* Label Boxes */
-.label-box {
-  width: 90px;
-  height: 35px;
-  line-height: 35px;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
+/* Dark Mode */
+body.dark-mode {
+  background: #1e1e1e;
+  color: #f0f0f0;
 }
 
-.label-box.current {
-  background-color: red;
+body.dark-mode .icons a {
+  background: #2e2e2e;
+  box-shadow: -3px -3px 7px #3a3a3a,
+              3px 3px 5px #1a1a1a;
 }
 
-.label-box.former {
-  background-color: blue;
+body.dark-mode .icons a:hover:before {
+  background: #2e2e2e;
+  box-shadow: inset -3px -3px 7px #3a3a3a,
+              inset 3px 3px 5px #1a1a1a;
 }
 
-.label-box.hsc {
-  background-color: purple;
+/* Toggle Button */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.theme-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.theme-toggle label {
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .theme-toggle label {
+  color: #fff;
+  background-color: #444;
 }

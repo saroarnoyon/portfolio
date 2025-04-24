@@ -17,11 +17,6 @@
     />
   </head>
   <body>
-    <div class="theme-toggle">
-      <input type="checkbox" id="toggle-dark" />
-      <label for="toggle-dark"><i class="fas fa-moon"></i></label>
-    </div>
-
     <div class="container">
       <div class="row">
         <div class="text-center">
@@ -30,9 +25,10 @@
             width="100"
             height="100"
             class="rounded-circle"
+            alt="Profile Picture"
           />
           <h1>
-            Saroar Noyon <img src="images/badge.png" width="20" height="20" />
+            Saroar Noyon <img src="images/badge.png" width="20" height="20" alt="Badge" />
           </h1>
 
           <!-- Universities -->
@@ -42,11 +38,11 @@
 
           <!-- Social Media Icons -->
           <div class="icons">
-            <a href="https://facebook.com" class="fb"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" class="insta"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com" class="git"><i class="fab fa-github"></i></a>
-            <a href="https://youtube.com" class="yt"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61563515168016" class="fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/saroarnoyon/" class="insta" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/saroarnoyon" class="git" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@Saroar__" class="yt" target="_blank"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>
@@ -61,12 +57,5 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      const toggle = document.getElementById("toggle-dark");
-      toggle.addEventListener("change", () => {
-        document.body.classList.toggle("dark-mode");
-      });
-    </script>
   </body>
 </html>
